@@ -7,13 +7,15 @@ body {
     margin-top: 10vh;
 }
 
-button {
+button.edit {
     color: darkorange;
     background-color: gray;
     border: 0 solid;
     border-radius: 10px;
     position: absolute;
-    left: 10;
+    left: 1em;
+    margin: .2em 0 0 0;
+    height: 2em;
 }
 
 span {
@@ -24,7 +26,9 @@ span {
 
 .glyphicon.glyphicon-plus {
     position: absolute;
-    right: 10;
+    right: 1em;
+    height: 7vh;
+    line-height: 7vh;
 }
 
 .title {
