@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body {
+                background-color: #333333;
+                font-size: 2rem;
+            }
+            button {
+                color: darkorange;
+                background-color: gray;
+                border: 0 solid;
+                border-radius: 10px;
+                position: absolute;
+                left: 10;
+            }
+            span {
+                text-align: center;
+                color: white;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <span class="title" style="width: 100%; text-align: center;">
+                <button>編輯</button>
+                <span>鬧鐘</span>
+                <span style="position:absolute; right: 10;" class="glyphicon glyphicon-plus"></span>
+            </span>
+        </div>
+
+    </body>
+</html>
