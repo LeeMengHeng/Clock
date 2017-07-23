@@ -1,81 +1,158 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-        </script>
-        
-        <style>
-            
-            body{
-                background-color: black;
-            }
-            button{
-                font-size: 50px;
-                color:orange;
-                border-style:none;
-                position:absolute;
-                left:10;
-                background-color:black;
-                height:100%;
-                
-            
 
-            }
-            span{
-                color:white;
-                font-size:50px;
-                border-style:none;
-                display:inline;
-                height:5vh;
-                line-height: 5vh
-                
-                
-            }
-            .title{
-                text-align: center;
-                width:100%;
-                display:block;
-                border-bottom: 1px solid grey;
-                height: 5vh;
-                position: fixed;
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
 
-            }
-            .glyphicon.glyphicon-plus{
-                font-size:50px;
-                position:absolute;
-                right:10;
-                color:orange; 
-                height:5vh;
-                line-height:5vh;
-    
-            }
-            
-            
-            
-            
+    <style>
+        body {
+            background-color: black;
+        }
 
-        </style>
+        button {
+            font-size: 50px;
+            color: orange;
+            border-style: none;
+            position: absolute;
+            left: 10;
+            background-color: black;
+            height: 100%;
+        }
 
-    </head>
-    <body>
-        
-        <div class="head">
-            <span class="title">
+         span {
+            /* color: white; */
+            /* font-size: 50px; */
+            /* border-style: none; */
+            /* display: inline; */
+            /* height: 5vh; */
+            /* line-height: 5vh */
+        } 
+
+        .title {
+            text-align: center;
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid grey;
+            height: 5vh;
+            position: fixed;
+            top:0;
+        }
+
+        .glyphicon.glyphicon-plus {
+            font-size: 50px;
+            position: absolute;
+            right: 10;
+            color: orange;
+            height: 5vh;
+            line-height: 5vh;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        /* Hide default HTML checkbox */
+
+        .switch input {
+            display: none;
+        }
+        /* The slider */
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        .content{
+           margin-top:10vh; 
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="head">
+        <span class="title">
                 <button>
                     Edit  
                 </button>
-                <span style="height:100%">
+                <span style="height:5vh; line-height:5vh;">
                     Alarm
                 </span>
-                <span class="glyphicon glyphicon-plus">
-                </span>     
-            </span>
+        <span class="glyphicon glyphicon-plus">
+                </span>
+        </span>
+    </div>
+    <div class="content">
 
+
+        <div class="alarm">
+            <div class="clock">
+                <div class="time">
+                    <span style = "font-size:130px">7:15</span>
+                    <span style = "font-size: 70px">AM</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round">
+                        </span>
+                    </label>
+                </div>
+                
+            </div>
 
         </div>
-        
-        
-    </body>
+    </div>
+
+
+
+
+</body>
+
 </html>
