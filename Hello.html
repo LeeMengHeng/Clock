@@ -5,6 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="switch.css">
     <style>
 
     </style>
@@ -23,16 +24,28 @@
     </div>
     <div class="content">
         <div class="alarm"> 
-            <div class="time">
-                <span style="font-size: 5rem;">7:17</span>
-                <span class="ampm" style="font-size: 2rem">上午</span>                
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
+            <div class="time" style="position: relative;">
+                <span style="font-size: 4em;">7:17</span>
+                <span class="ampm" style="font-size: 2em">AM</span>   
+                <span style="position: absolute; bottom: 30; right: 0; width: 25vw;">                
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
             </div>
-            <!-- Rounded switch -->
-            
+        </div>
+        <div class="alarm"> 
+            <div class="time" style="position: relative;">
+                <span style="font-size: 4em;">1:17</span>
+                <span class="ampm" style="font-size: 2em">PM</span>   
+                <span style="position: absolute; bottom: 30; right: 0; width: 25vw;">                
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+            </div>
         </div>
     </div>
 </body>
